@@ -1,0 +1,40 @@
+{
+  "name": "pi-theme-lumon",
+  "version": "0.1.0",
+  "description": "Lumon Industries theme for pi — navy voids, fluorescent cyan edges, and sterile blue-gray surfaces, inspired by Severance and the omarchy-lumon-theme palette.",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-theme",
+    "terminal-theme",
+    "severance",
+    "lumon",
+    "coding-agent"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoskichel/pi-theme-lumon.git"
+  },
+  "files": [
+    "themes",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "tsc && biome check",
+    "test": "node --test",
+    "fix": "biome check --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.10",
+    "@earendil-works/pi-coding-agent": "^0.84.0",
+    "typescript": "^5.9.0"
+  },
+  "pi": {
+    "themes": [
+      "./themes"
+    ]
+  }
+}
