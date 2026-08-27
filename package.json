@@ -1,7 +1,7 @@
 {
   "name": "pi-theme-lumon",
   "version": "0.1.0",
-  "description": "Lumon Industries theme for pi — navy voids, fluorescent cyan edges, and sterile blue-gray surfaces, inspired by Severance and the omarchy-lumon-theme palette.",
+  "description": "Lumon Industries theme for pi \u2014 navy voids, fluorescent cyan edges, and sterile blue-gray surfaces, inspired by Severance and the omarchy-lumon-theme palette.",
   "keywords": [
     "pi-package",
     "pi",
@@ -19,6 +19,8 @@
   },
   "files": [
     "themes",
+    "terminal",
+    "assets/preview.png",
     "README.md",
     "LICENSE"
   ],

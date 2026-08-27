@@ -4,6 +4,8 @@ A [pi](https://github.com/badlogic/pi-mono) theme for the severed floor: navy vo
 
 Please enjoy each color equally.
 
+![Lumon theme in pi](assets/preview.png)
+
 ## Install
 
 ```bash
@@ -46,8 +48,6 @@ Then pick it in `/settings`, or set it directly in `~/.pi/agent/settings.json`:
 
 The source palette is monochrome blue. Three non-blue hues — wellness, alarm, kier — are permitted so diffs, failures, and bash mode stay readable. Compliance has been notified.
 
-Pair it with the matching Ghostty, Kitty, or Alacritty palette from [omarchy-lumon-theme](https://github.com/OldJobobo/omarchy-lumon-theme) for a fully partitioned workstation.
-
 ## Development
 
 ```bash
@@ -55,6 +55,18 @@ npm ci
 npm run check   # types + lint
 npm test        # validate every theme against pi's theme schema
 ```
+
+Regenerate the screenshot (needs `vhs`, `ttyd`, `ffmpeg`):
+
+```bash
+vhs assets/preview.tape
+```
+
+It renders the committed transcript in `assets/demo-session.jsonl`, so the preview never depends on a live model call.
+
+## Matching terminal colors
+
+`terminal/lumon.itermcolors` is an iTerm2 color preset with the same palette. Double-click it to import, then apply it per profile under Settings, Profiles, Colors, Color Presets. For other terminals, use the Ghostty, Kitty, Alacritty, or Foot palettes from [omarchy-lumon-theme](https://github.com/OldJobobo/omarchy-lumon-theme).
 
 To try the theme from a checkout without installing the package:
 
